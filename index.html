@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css">
+</head>
+<body>
+  
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 mb-4 offset-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="postform"> 
+                            <div class="form-group">
+                               <label for="title">Title</label>
+                               <input type="text" required id="titleId" class="form-control">
+                            </div>
+                            <div>
+                                <label for="content">Content</label>
+                                <textarea class="form-control" required id="contentId"></textarea>
+                            </div>
+                            <div class="form-group">
+                               <label for="UserId">userId</label>
+                               <select class="form-control" id="userId">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                               </select>
+                            </div>
+                            <div class="text-right">
+                               <button id="submitbtn" class="btn btn-outline-secondary" type="submit">ADD POST</button>
+                               <button id="updatebtn" class="btn btn-outline-secondary d-none" type="button">UPDATE POST</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <div class="row" id="postcontainer">
+            <!-- <div class="col-md-4 mb-4">
+               <div class="card">
+                 <div class="card-header">
+                  <h3 class="m-0">title</h3>
+                 </div>
+                 <div class="card-body">
+                  <p class="m-0">content</p>
+                 </div>
+                 <div class="card-footer d-flex justify-content-between">
+                   <button class="btn btn-sm btn-outline-primary">EDIT</button>
+                   <button class="btn btn-sm btn-outline-danger">DELETE</button>
+                 </div>
+               </div>
+            </div> -->
+        </div>
+    </div>  
+ 
+    <div class="loader d-none" id="loader">
+        <div class="spinner-border text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    <script src="./assests/js/app.js"></script>
+</body>
+</html>

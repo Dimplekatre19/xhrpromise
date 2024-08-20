@@ -1,0 +1,20 @@
+
+.loader{
+     position: fixed;
+     left:0;
+     top:0;
+     width: 100%;
+     height: 100vh;
+     background-color: rgba(0,0,0,.2);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.postcard h3{
+     height: 40px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     /* transition: all .8s ease-in-out; */
+}
